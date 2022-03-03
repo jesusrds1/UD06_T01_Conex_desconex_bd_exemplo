@@ -2,7 +2,7 @@
 
 	//Conexión
 
-	$conexionBD = @mysqli_connect('localhost', 'usuarioIAW', '1234');
+	$conexionBD = @mysqli_connect('localhost', 'jesus', '1234');
 
 
 
@@ -14,11 +14,9 @@
 
 		echo('Conexión establecida con éxito<br/>');
 
-	
 
 
-
-		//Selección da BD
+	//Selección da BD
 
 		if (!mysqli_select_db($conexionBD, 'IAW')) {
 
@@ -32,7 +30,7 @@
 
 
 
-		//Desconexión
+	//Desconexión
 
 		if (!@mysqli_close($conexionBD)) {
 
